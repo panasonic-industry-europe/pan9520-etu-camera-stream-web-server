@@ -1,0 +1,13 @@
+{
+    "cmake.configureOnOpen": true,
+    "files.associations": {
+        "freertos.h": "c",
+        "sensor.h": "c",
+        "board.h": "c",
+        "esp_err.h": "c",
+        "board_kaluga_v1_1.h": "c",
+        "board_kaluga_v1_2.h": "c",
+        "board_kaluga_v1_3.h": "c",
+        "lcd.h": "c"
+    }
+}
