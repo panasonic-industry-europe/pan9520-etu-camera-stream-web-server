@@ -12,7 +12,7 @@ This application for the PAN9520 ETU demonstrates a webserver that serves a came
 4. Wait for the installation to finish. This takes a while. Visual Studio Code must be restarted for the installation to take effect.
 5. Clone this project with:
 ```
-git clone --recursive $OUR_GIT_URL$
+git clone --recursive https://github.com/panasonic-industry-europe/pan9520-etu-camera-stream-web-server.git
 ```
 6. Use "File" -> "Open Folder" and select the project folder containing this application
 7. Wait for all dependencies to be downloaded and installed automatically. This takes a while.
