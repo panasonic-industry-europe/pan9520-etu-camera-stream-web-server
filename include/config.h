@@ -35,8 +35,3 @@ SOFTWARE.*/
 #define CAM_D7    GPIO_NUM_6  /*!< hardware pins: D9 */
 #define CAM_SCL   GPIO_NUM_7
 #define CAM_SDA   GPIO_NUM_8
-// Camera Target Resolution
-#define CAM_WIDTH           (320)
-#define CAM_HIGH            (240)
-#define CAM_PIXELS          CAM_WIDTH * CAM_HIGH
-#define CAM_PIXELS_STRING   "76800"             // CAM_WIDTH * CAM_HIGH result as string
