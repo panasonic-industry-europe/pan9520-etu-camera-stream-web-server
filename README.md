@@ -18,8 +18,9 @@ git clone --recursive https://github.com/panasonic-industry-europe/pan9520-etu-c
 7. Wait for all dependencies to be downloaded and installed automatically. This takes a while.
 
 ## Hardware setup
-For this application a OV2640 camera must be connected to the camera interface labelled CAM.
+1. For this application a OV2640 camera must be connected to the camera interface labelled CAM.
 https://www.seeedstudio.com/OV2640-Fisheye-Camera-p-4048.html
+1. Unplug jumpers from UART1 pinheader. This is needed because the camera interface GPIOs are also shared with the UART1 interface. This leads to a data stream on UART1 while the camera is running. Sometimes Windows will detect a serial mouse because of this and will cause random mouse pointer movement and clicks.
 
 ## Firmware build
 1. Open the PlatformIO project task menu by clicking on the corresponding icon on the left side (Alien Head)
