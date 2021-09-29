@@ -71,8 +71,11 @@ static void wifi_init_softap(void)
     wifi_config_t wifi_config;
     memset(&wifi_config, 0, sizeof(wifi_config_t));
     memcpy(&wifi_config.ap.ssid[0], EXAMPLE_ESP_WIFI_AP_SSID, sizeof(EXAMPLE_ESP_WIFI_AP_SSID));
+
+    memcpy(&wifi_config.ap.password[0], "123456789", 9);
+
     wifi_config.ap.max_connection = EXAMPLE_MAX_STA_CONN;
-    wifi_config.ap.authmode = WIFI_AUTH_OPEN;
+    wifi_config.ap.authmode = WIFI_AUTH_WPA2_PSK;
 
     ESP_ERROR_CHECK(esp_wifi_set_config(ESP_IF_WIFI_AP, &wifi_config));
 
